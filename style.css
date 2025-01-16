@@ -1,19 +1,48 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-#paragrafo1 {
-    font-weight: bold;
-    color: black
+#header {
+
+    display: flex; /* Ativa o layout flexível */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    justify-content: space-between; /* Espaço entre o título e o nav */
+    padding: 10px;
+    border: 2px;
+
 }
 
 #TituloNome {
-    font-family:monospace
+    
+    margin: 0; /* Remove margens extras do h1 */
+    font-family: monospace;
 }
 
 #SobreId {
     font-family: monospace;
     font-weight: 100;
+}
+
+.container-imagem {
+
+    .container-imagem {
+        display: flex; /* Ativa o layout flexível */
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        height: 100vh; /* Ocupa a altura total da janela */
+        background-color: white; /* Fundo branco para destacar */
+    }
+}
+
+#Foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover; /* Ajusta a imagem sem distorção */
+    border: 5px solid #000; /* Borda preta */
+}
+
+
+#paragrafo1 {
+    font-weight: bold;
+    color: black
 }
 
 #HabilidadesId {
@@ -35,3 +64,23 @@
     font-family: monospace;
     font-weight: 100;
 }
+
+#list-style-type {
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+#linav1 {
+    margin: 0 10px;/* Adiciona espaçamento entre os itens */
+    text-decoration: none;
+    color: #000;
+}
+
