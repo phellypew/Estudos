@@ -1,0 +1,236 @@
+/* Reset e Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'phellype', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #f7edcee6;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-esquerda a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-direita {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-direita a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-direita a:hover {
+    color: #0077b5;
+}
+
+/* Primeira Seção (cor de fundo diferente) */
+.secao-inicial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ocupa toda a altura da tela */
+    background-color: #f4f4f4; /* Cor de fundo */
+    padding: 20px;
+}
+
+/* Segunda Seção (outra cor de fundo) */
+.secao-conteudo {
+    background-color: #ffffff; /* Cor de fundo da segunda seção */
+    padding: 20px 0;
+}
+
+.centralizado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.ola-muito-prazer {
+    font-size: 2.5rem; /* Tamanho do título */
+    font-weight: bold;
+    color: #333; /* Cor do texto */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    text-align: center; /* Centraliza o texto */
+}
+
+.ola-muito-prazer::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: black;
+    margin: 10px auto;
+}
+
+.foto-container {
+    width: 350px; /* Tamanho da foto */
+    height: 350px; /* Tamanho da foto */
+    border-radius: 50%; /* Formato circular */
+    overflow: hidden; /* Garante que a imagem não ultrapasse o contêiner */
+    margin: 0 auto 20px auto; /* Centraliza e adiciona espaço abaixo */
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.Foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra o contêiner */
+    transition: transform 0.3s ease-in-out; /* Efeito de zoom suave */
+}
+
+.foto-container:hover .Foto {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+.intro-text {
+    font-size: 1.2rem; /* Tamanho do texto */
+    color: #555; /* Cor do texto */
+    max-width: 600px; /* Largura máxima do texto */
+    margin: 0 auto 20px auto; /* Centraliza e adiciona espaço abaixo */
+    text-align: center; /* Centraliza o texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+/* Ícones das Redes Sociais */
+.social-medias {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.social-link {
+    text-decoration: none;
+    font-size: 2.0rem;
+}
+
+.social-link i {
+    font-size: 2.0rem; /* Tamanho dos ícones */
+    color: #333; /* Cor dos ícones */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+.social-link:hover i {
+    transform: scale(1.2); /* Aumenta o ícone em 20% */
+    color: #0077b5; /* Muda a cor ao passar o mouse */
+}
+
+.icon-container {
+    width: 70px; /* Contêiner maior */
+    height: 70px; /* Contêiner maior */
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-medias .social-link .icon-container i {
+    font-size: 2.5rem; /* Tamanho aumentado dos ícones */
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover .icon-container {
+    background-color: #0077b5;
+    transform: scale(1.1);
+}
+
+.social-link:hover .icon-container i {
+    color: #fff;
+}
+
+/* Seções de Conteúdo */
+.section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Formulário de Contato */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #0077b5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #005f8a;
+}
